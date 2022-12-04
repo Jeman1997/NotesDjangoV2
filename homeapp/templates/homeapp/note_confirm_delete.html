@@ -1,0 +1,16 @@
+{%extends 'homeapp/base.html'%}
+{%load crispy_forms_tags%}
+{%block content%}
+<div class="" style="margin-left:30px;margin-top:70px;width:270px;">
+  <form class="" action="" method="post">
+    {%csrf_token%}
+    <fieldset>
+      <legend >Delete Post</legend>
+      <h2>Are u sure u want to delete the note?</h2>
+      <button type="submit" name="button">Yes,Delete</button>
+    </fieldset>
+
+    </form>
+    <a href="{%url 'notes-home'%}" style="margin-left:30px;">Cancel</a>
+</div>
+{%endblock content%}

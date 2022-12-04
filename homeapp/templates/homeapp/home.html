@@ -1,0 +1,21 @@
+{%extends 'homeapp/base.html'%}
+{%block content%}
+    <div class="addnewnote">
+      <form class="addnewform" action='addnoteyo/' method="post">
+        {%csrf_token%}
+        <textarea name="name" rows="8" cols="80" placeholder="Add Note"></textarea>
+        <button  type="submit" name="button">Save</button>
+      </form>
+    </div>
+
+    <div class="allnotes">
+      {%for note in notes%}
+      <div class="allnotes-single">
+          <legend>{{note.date_posted|date:"F d, Y"}}</legend>
+          <p>{{note.note_content}}</p>
+          <a href="{%url 'note-detail' note.id%}"><button type="button" name="button">Edit</button></a>
+          <a href="{%url 'note-delete' note.id%}"><button type="button" name="button" style='background-color:red;'>Delete</button></a>
+      </div>
+      {%endfor%}
+    </div>
+{%endblock content%}

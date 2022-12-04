@@ -1,0 +1,112 @@
+body{
+  margin:0 0 0 0;
+  width:100vw;
+  height:100vh;
+  font-family: 'Josefin Sans', sans-serif;
+}
+textarea{
+  resize:none;
+  outline:none;
+  border-style: solid;
+  border-radius: 7px;
+    font-family: 'Josefin Sans', sans-serif;
+    box-shadow: none;
+}
+nav{
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  background-color: #59CE8F;
+  justify-content: space-between;
+  position: fixed;
+  top:0;
+}
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+.nav-title{
+ display: flex;
+ font-style: italic;
+ font-size:20px;
+}
+
+.nav-title>a{
+  margin:10px 11px 10px 11px;
+}
+
+.nav-links{
+  display: flex;
+}
+.nav-links>a{
+  margin:10px 11px 10px 11px;
+}
+
+.addnewform{
+  width:500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+.addnewform>button{
+  margin:15px;
+}
+button{
+  width:100px;
+  background-color: #59CE8F;
+ border-radius: 5px;
+ cursor: pointer;
+}
+
+.addnewnote{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+}
+.allnotes{
+ display: flex;
+ flex-wrap: wrap;
+ font-family: 'Josefin Sans', sans-serif;
+ font-size: 15px;
+}
+.allnotes-single{
+  width:300px;
+ margin:30px;
+ padding: 15px;
+ background-color: #E8F9FD;
+}
+.allnotes-single>textarea{
+  width:270px;
+  font-size: 15px;
+}
+.allnotes-fieldset{
+  width:260px;
+}
+.registerform-div{
+  margin-top: 70px;
+  width:800px;
+  margin-left:70px;
+}
+.msg{
+  color:black;
+  margin-top: 60px;
+}
+.profile-div{
+  margin-top: 70px;
+  margin-left: 40px;
+}
+.singlenotedetail{
+  margin-top: 70px;
+  margin-left: 50px;
+  width:270px;
+}
+.singlenotedetail>textarea{
+  width:270px;
+  font-size: 15px;
+}

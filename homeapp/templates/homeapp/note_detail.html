@@ -1,0 +1,9 @@
+{%extends 'homeapp/base.html'%}
+{%block content%}
+      <form class="singlenotedetail" action="updatenote/" method="post">
+         {%csrf_token%}
+          <legend>{{object.date_posted|date:"F d, Y"}}</legend>
+          <textarea name="note_content" rows="8" cols="80">{{object.note_content}}</textarea>
+          <button type="submit" name="button">Update</button>
+      </form>
+{%endblock content%}
